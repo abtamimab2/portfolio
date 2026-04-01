@@ -20,6 +20,7 @@
             <a href="#about">About</a>
             <a href="#services">Experience</a>
             <a href="#portfolio">Projects</a>
+            <a href="#motion">Media</a>
             <a href="#contact">Contact</a>
         </nav>
 
@@ -45,11 +46,12 @@
                 </p>
 
                 <div class="social-media">
-                    <a href="tel:+93707191589" aria-label="Phone"><i class='bx bx-phone'></i></a>
-                    <a href="https://wa.me/93777168296" aria-label="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
-                    <a href="https://www.youtube.com/channel/UCgN62oe7UNsFhq_YaRFfSlQ" aria-label="YouTube" target="_blank"><i class='bx bxl-youtube'></i></a>
+                    <a href="tel:+93707191589" aria-label="Phone" id="phone-dialog-link"><i class='bx bx-phone'></i></a>
+                    <a href="https://wa.me/93777168296" target="_blank" aria-label="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="https://www.linkedin.com/in/tamim-amiri-52151533a/" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.youtube.com/channel/UCgN62oe7UNsFhq_YaRFfSlQ" target="_blank" aria-label="YouTube"><i class='bx bxl-youtube'></i></a>
                     <a href="mailto:abtamimabamiri@gmail.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
-                    <a href="#contact" aria-label="Address"><i class='bx bx-map'></i></a>
+                    <a href="#contact" aria-label="Address" id="address-dialog-link"><i class='bx bx-map'></i></a>
                 </div>
 
 
@@ -241,137 +243,302 @@
             </div>
         </section>
 
-        <section class="portfolio" id="portfolio">
-            <h2 class="heading">Featured <span>Website</span> Projects</h2>
+        <section class="portfolio portfolio-showcase" id="portfolio">
+            <div class="portfolio-intro">
+                <p class="section-tag">Selected Client Work</p>
+                <h2 class="heading">Featured <span>Website</span> Projects</h2>
+                <p class="portfolio-lead">
+                    Business websites designed and launched with a clean user experience, strong
+                    presentation, and practical delivery for real clients.
+                </p>
+            </div>
 
-            <div class="portfolio-container">
-                <article class="portfolio-box">
-                    <img src="images/websitesimages/Screenshot (1).png" alt="Step Up Consultant website">
-                    <div class="portfolio-layer">
-                        <h4>Step Up Consultant</h4>
-                        <p>Developed and hosted business website on January 15, 2023.</p>
-                        <a href="https://abtamimab2.github.io/stepup/" target="_blank" rel="noopener noreferrer" aria-label="Open project"><i class='bx bx-link-external'></i></a>
+            <div class="portfolio-container portfolio-grid websites-grid">
+                <article class="portfolio-box portfolio-card">
+                    <div class="portfolio-media">
+                        <img src="images/websitesimages/Screenshot (1).png" alt="Step Up Consultant website">
+                        <span class="portfolio-badge">Business Website</span>
+                    </div>
+                    <div class="portfolio-layer portfolio-card-body">
+                        <div class="portfolio-copy">
+                            <p class="portfolio-kicker">Launched January 15, 2023</p>
+                            <h4>Step Up Consultant</h4>
+                            <p>Professional company website built to present services clearly and strengthen online trust.</p>
+                        </div>
+                        <a href="https://abtamimab2.github.io/stepup/" target="_blank" rel="noopener noreferrer" aria-label="Open Step Up Consultant project"><i class='bx bx-link-external'></i></a>
                     </div>
                 </article>
 
-                <article class="portfolio-box">
-                    <img src="images/websitesimages/Screenshot (2).png" alt="Livepure website">
-                    <div class="portfolio-layer">
-                        <h4>Healthyza</h4>
-                        <p>Business website delivered on June 1, 2023.</p>
-                        <a href="https://abtamimab2.github.io/healthyza/" target="_blank" rel="noopener noreferrer" aria-label="Open project"><i class='bx bx-link-external'></i></a>
+                <article class="portfolio-box portfolio-card">
+                    <div class="portfolio-media">
+                        <img src="images/websitesimages/Screenshot (2).png" alt="Healthyza website">
+                        <span class="portfolio-badge">Health Brand</span>
+                    </div>
+                    <div class="portfolio-layer portfolio-card-body">
+                        <div class="portfolio-copy">
+                            <p class="portfolio-kicker">Delivered June 1, 2023</p>
+                            <h4>Healthyza</h4>
+                            <p>Business-focused landing experience designed to showcase products and communicate value with clarity.</p>
+                        </div>
+                        <a href="https://abtamimab2.github.io/healthyza/" target="_blank" rel="noopener noreferrer" aria-label="Open Healthyza project"><i class='bx bx-link-external'></i></a>
                     </div>
                 </article>
 
-                <article class="portfolio-box">
-                    <img src="images/websitesimages/Screenshot (3).png" alt="Healthyza website">
-                    <div class="portfolio-layer">
-                        <h4>Azizullah Niazi LLC</h4>
-                        <p>Company website launched on June 23, 2023.</p>
-                        <a href="https://abtamimab2.github.io/azimllc/" target="_blank" rel="noopener noreferrer" aria-label="Open project"><i class='bx bx-link-external'></i></a>
+                <article class="portfolio-box portfolio-card">
+                    <div class="portfolio-media">
+                        <img src="images/websitesimages/Screenshot (3).png" alt="Azizullah Niazi LLC website">
+                        <span class="portfolio-badge">Corporate Presence</span>
+                    </div>
+                    <div class="portfolio-layer portfolio-card-body">
+                        <div class="portfolio-copy">
+                            <p class="portfolio-kicker">Launched June 23, 2023</p>
+                            <h4>Azizullah Niazi LLC</h4>
+                            <p>Company website created to present identity, services, and credibility in a polished digital format.</p>
+                        </div>
+                        <a href="https://abtamimab2.github.io/azimllc/" target="_blank" rel="noopener noreferrer" aria-label="Open Azizullah Niazi LLC project"><i class='bx bx-link-external'></i></a>
                     </div>
                 </article>
 
-                <article class="portfolio-box">
-                    <img src="images/websitesimages/Screenshot (4).png" alt="Azizullah Niazi LLC website">
-                    <div class="portfolio-layer">
-                        <h4>wiseworldstore</h4>
-                        <p>Company website launched on June 23, 2023.</p>
-                        <a href="https://abtamimab2.github.io/wisestore/" target="_blank" rel="noopener noreferrer" aria-label="Open project"><i class='bx bx-link-external'></i></a>
+                <article class="portfolio-box portfolio-card">
+                    <div class="portfolio-media">
+                        <img src="images/websitesimages/Screenshot (4).png" alt="Wiseworldstore website">
+                        <span class="portfolio-badge">Online Store</span>
+                    </div>
+                    <div class="portfolio-layer portfolio-card-body">
+                        <div class="portfolio-copy">
+                            <p class="portfolio-kicker">Launched June 23, 2023</p>
+                            <h4>Wiseworldstore</h4>
+                            <p>Modern storefront website with a simple browsing experience and a stronger visual product presentation.</p>
+                        </div>
+                        <a href="https://abtamimab2.github.io/wisestore/" target="_blank" rel="noopener noreferrer" aria-label="Open Wiseworldstore project"><i class='bx bx-link-external'></i></a>
                     </div>
                 </article>
 
-                <article class="portfolio-box">
-                    <img src="images/websitesimages/Screenshot (5).png" alt="Aryobi LLC website">
-                    <div class="portfolio-layer">
-                        <h4>Mohammad Mansoor LLC</h4>
-                        <p>Project launched on September 2, 2023.</p>
-                        <a href="https://abtamimab2.github.io/mohammadmansoorllc/" target="_blank" rel="noopener noreferrer" aria-label="Open project"><i class='bx bx-link-external'></i></a>
+                <article class="portfolio-box portfolio-card">
+                    <div class="portfolio-media">
+                        <img src="images/websitesimages/Screenshot (5).png" alt="Mohammad Mansoor LLC website">
+                        <span class="portfolio-badge">Client Delivery</span>
+                    </div>
+                    <div class="portfolio-layer portfolio-card-body">
+                        <div class="portfolio-copy">
+                            <p class="portfolio-kicker">Launched September 2, 2023</p>
+                            <h4>Mohammad Mansoor LLC</h4>
+                            <p>Project website delivered with a neat content structure and business-ready visual hierarchy.</p>
+                        </div>
+                        <a href="https://abtamimab2.github.io/mohammadmansoorllc/" target="_blank" rel="noopener noreferrer" aria-label="Open Mohammad Mansoor LLC project"><i class='bx bx-link-external'></i></a>
                     </div>
                 </article>
 
-                <article class="portfolio-box">
-                    <img src="images/websitesimages/Screenshot (6).jpg" alt="More projects by Tamim">
-                    <div class="portfolio-layer">
-                        <h4>More Client Projects</h4>
-                        <p>MZXWELL LLC, Azim LLC, and Sobat LLC among additional hosted work.</p>
+                <article class="portfolio-box portfolio-card portfolio-card accent-card">
+                    <div class="portfolio-media">
+                        <img src="images/websitesimages/Screenshot (6).jpg" alt="More projects by Tamim">
+                        <span class="portfolio-badge">More Work</span>
+                    </div>
+                    <div class="portfolio-layer portfolio-card-body">
+                        <div class="portfolio-copy">
+                            <p class="portfolio-kicker">Additional hosted projects</p>
+                            <h4>More Client Projects</h4>
+                            <p>MZXWELL LLC, Azim LLC, Sobat LLC, and other business websites delivered for growing clients.</p>
+                        </div>
                         <a href="#contact" aria-label="Contact for more projects"><i class='bx bx-link-external'></i></a>
                     </div>
                 </article>
             </div>
         </section>
 
-        
-        <section class="portfolio" id="portfolio">
-            <h2 class="heading">Featured <span>Graphic Design</span> Projects</h2>
+        <section class="portfolio graphic-showcase" id="graphic-design">
+            <div class="portfolio-intro">
+                <p class="section-tag">Creative Portfolio</p>
+                <h2 class="heading">Featured <span>Graphic Design</span> Projects</h2>
+                <p class="portfolio-lead">
+                    Selected visual work across educational content, social media campaigns, print
+                    layouts, and brand-focused designs with a more polished gallery presentation.
+                </p>
+            </div>
 
-            <div class="portfolio-container">
-                <article class="portfolio-box">
-                    <img src="images/graphicdesign/web/infographics.jpg" alt="infographics.jpg">
-                    <div class="portfolio-layer">
+            <div class="portfolio-container graphic-design-grid">
+                <article class="portfolio-box graphic-design-card" style="--card-delay: 0s;">
+                    <img src="images/graphicdesign/web/infographics.jpg" alt="Chemistry infographic">
+                    <div class="graphic-content">
+                        <span class="graphic-chip">Infographic</span>
                         <h4>Chemistry Infographic</h4>
-                        <a href="images/graphicdesign/show/infographics.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open project"><i class='bx bx-link-external'></i></a>
+                        <p>Educational visual content designed for quick understanding and clean presentation.</p>
+                        <a href="images/graphicdesign/show/infographics.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open Chemistry Infographic"><i class='bx bx-link-external'></i></a>
                     </div>
                 </article>
-                <article class="portfolio-box">
-                    <img src="images/graphicdesign/web/facebookads.jpg" alt="facebookads.jpg">
-                    <div class="portfolio-layer">
+
+                <article class="portfolio-box graphic-design-card" style="--card-delay: 0.06s;">
+                    <img src="images/graphicdesign/web/facebookads.jpg" alt="Facebook ads for a course">
+                    <div class="graphic-content">
+                        <span class="graphic-chip">Social Ads</span>
                         <h4>Facebook Ads For a Course</h4>
-                        <a href="images/graphicdesign/show/facebookads.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open project"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </article>
-                <article class="portfolio-box">
-                    <img src="images/graphicdesign/web/banner1.jpg" alt="banner1.jpg">
-                    <div class="portfolio-layer">
-                        <h4>Food List for Resstorant</h4>
-                        <a href="images/graphicdesign/show/banner1.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open project"><i class='bx bx-link-external'></i></a>
+                        <p>Attention-grabbing ad creative built to promote learning content more effectively.</p>
+                        <a href="images/graphicdesign/show/facebookads.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open Facebook Ads for a Course"><i class='bx bx-link-external'></i></a>
                     </div>
                 </article>
 
-                <article class="portfolio-box">
-                    <img src="images/graphicdesign/web/banner2.jpg" alt="banner2.jpg">
-                    <div class="portfolio-layer">
+                <article class="portfolio-box graphic-design-card" style="--card-delay: 0.12s;">
+                    <img src="images/graphicdesign/web/banner1.jpg" alt="Restaurant food list banner">
+                    <div class="graphic-content">
+                        <span class="graphic-chip">Menu Layout</span>
+                        <h4>Food List for Restaurant</h4>
+                        <p>Readable and attractive food presentation created for customer-facing use.</p>
+                        <a href="images/graphicdesign/show/banner1.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open Food List for Restaurant"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </article>
+
+                <article class="portfolio-box graphic-design-card" style="--card-delay: 0.18s;">
+                    <img src="images/graphicdesign/web/banner2.jpg" alt="Hospital banner">
+                    <div class="graphic-content">
+                        <span class="graphic-chip">Banner Design</span>
                         <h4>Banner for Hospital</h4>
-                        <a href="images/graphicdesign/show/banner2.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open project"><i class='bx bx-link-external'></i></a>
+                        <p>Large-format promotional design with clear hierarchy and institutional tone.</p>
+                        <a href="images/graphicdesign/show/banner2.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open Banner for Hospital"><i class='bx bx-link-external'></i></a>
                     </div>
                 </article>
 
-                <article class="portfolio-box">
-                    <img src="images/graphicdesign/web/banner3.jpg" alt="banner3.jpg">
-                    <div class="portfolio-layer">
+                <article class="portfolio-box graphic-design-card" style="--card-delay: 0.24s;">
+                    <img src="images/graphicdesign/web/banner3.jpg" alt="Facebook ads for hospital">
+                    <div class="graphic-content">
+                        <span class="graphic-chip">Campaign Visual</span>
                         <h4>Facebook Ads for Hospital</h4>
-                        <a href="images/graphicdesign/show/banner3.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open project"><i class='bx bx-link-external'></i></a>
+                        <p>Promotional creatives tailored for social reach and fast visual communication.</p>
+                        <a href="images/graphicdesign/show/banner3.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open Facebook Ads for Hospital"><i class='bx bx-link-external'></i></a>
                     </div>
                 </article>
-                <article class="portfolio-box">
-                    <img src="images/graphicdesign/web/infographic2.jpg" alt="infographic2.jpg">
-                    <div class="portfolio-layer">
+
+                <article class="portfolio-box graphic-design-card" style="--card-delay: 0.3s;">
+                    <img src="images/graphicdesign/web/infographic2.jpg" alt="Faculty department infographic">
+                    <div class="graphic-content">
+                        <span class="graphic-chip">Academic Visual</span>
                         <h4>Infographic for Department of Faculty</h4>
-                        <a href="images/graphicdesign/show/infographic2.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open project"><i class='bx bx-link-external'></i></a>
+                        <p>Structured academic content transformed into a digestible visual format.</p>
+                        <a href="images/graphicdesign/show/infographic2.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open Faculty Department Infographic"><i class='bx bx-link-external'></i></a>
                     </div>
                 </article>
 
-                <article class="portfolio-box">
-                    <img src="images/graphicdesign/web/banner4.jpg" alt="banner4.jpg">
-                    <div class="portfolio-layer">
+                <article class="portfolio-box graphic-design-card" style="--card-delay: 0.36s;">
+                    <img src="images/graphicdesign/web/banner4.jpg" alt="Chemistry periodic table design">
+                    <div class="graphic-content">
+                        <span class="graphic-chip">Poster Design</span>
                         <h4>Chemistry Periodic Table Design</h4>
-                        <a href="images/graphicdesign/show/banner4.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open project"><i class='bx bx-link-external'></i></a>
+                        <p>An educational poster balancing clarity, color, and information density.</p>
+                        <a href="images/graphicdesign/show/banner4.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open Chemistry Periodic Table Design"><i class='bx bx-link-external'></i></a>
                     </div>
                 </article>
 
-                <article class="portfolio-box">
-                    <img src="images/graphicdesign/web/coverpage.jpg" alt="coverpage.jpg">
-                    <div class="portfolio-layer">
+                <article class="portfolio-box graphic-design-card" style="--card-delay: 0.42s;">
+                    <img src="images/graphicdesign/web/coverpage.jpg" alt="Book cover page design">
+                    <div class="graphic-content">
+                        <span class="graphic-chip">Book Cover</span>
                         <h4>Book Cover Page</h4>
-                        <a href="images/graphicdesign/show/coverpage.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open project"><i class='bx bx-link-external'></i></a>
+                        <p>Publication cover work designed to feel polished, readable, and memorable.</p>
+                        <a href="images/graphicdesign/show/coverpage.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open Book Cover Page"><i class='bx bx-link-external'></i></a>
                     </div>
                 </article>
 
-                <article class="portfolio-box">
-                    <img src="images/graphicdesign/web/more.jpg" alt="more.jpg">
-                    <div class="portfolio-layer">
+                <article class="portfolio-box graphic-design-card more-projects-card" style="--card-delay: 0.48s;">
+                    <img src="images/graphicdesign/web/more.jpg" alt="More graphic design projects">
+                    <div class="graphic-content">
+                        <span class="graphic-chip">More Work</span>
                         <h4>More Client Projects</h4>
+                        <p>Additional designs available for brands, institutions, ads, and educational materials.</p>
                         <a href="#contact" aria-label="Contact for more projects"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="motion-showcase" id="motion">
+            <div class="portfolio-intro motion-intro">
+                <p class="section-tag">Educational Video Work</p>
+                <h2 class="heading">Motion, <span>Teaching</span> & YouTube Content</h2>
+                <p class="portfolio-lead">
+                    Computer science lessons presented through bilingual educational videos, screen
+                    recordings, and motion-based explanations for English and Dari audiences.
+                </p>
+            </div>
+
+            <div class="motion-overview">
+                <article class="motion-channel featured-channel">
+                    <div class="motion-channel-top">
+                        <span class="motion-label">English Channel</span>
+                        <i class='bx bxl-youtube'></i>
+                    </div>
+                    <h3>Computer Science Lessons in English</h3>
+                    <p>
+                        A growing collection of lessons focused on computer science topics in English,
+                        designed to explain concepts clearly for learners and self-study audiences.
+                    </p>
+                    <div class="motion-tags">
+                        <span>Screen Recording</span>
+                        <span>Voice Explanation</span>
+                        <span>Educational Motion</span>
+                    </div>
+                    <div class="motion-actions">
+                        <a href="https://www.youtube.com/channel/UCgN62oe7UNsFhq_YaRFfSlQ" target="_blank" rel="noopener noreferrer" class="btn">Visit English Channel</a>
+                    </div>
+                </article>
+
+                <article class="motion-channel">
+                    <div class="motion-channel-top">
+                        <span class="motion-label">Dari Channel</span>
+                        <i class='bx bxl-youtube'></i>
+                    </div>
+                    <h3>Computer Science Lessons in Dari</h3>
+                    <p>
+                        Dari-language tutorials created to make computer science subjects easier to
+                        understand for local students through practical and accessible teaching.
+                    </p>
+                    <div class="motion-tags">
+                        <span>Dari Teaching</span>
+                        <span>Concept Breakdowns</span>
+                        <span>Student Friendly</span>
+                    </div>
+                    <div class="motion-actions">
+                        <a href="http://www.youtube.com/channel/UCJLxtWd4hsxwtwmzsKMquPg" target="_blank" rel="noopener noreferrer" class="btn">Visit Dari Channel</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="motion-video-grid">
+                <article class="motion-video-card">
+                    <div class="video-frame">
+                        <iframe src="https://www.youtube.com/embed/9laUWdYjs3c" title="English computer science lesson sample 1" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="motion-video-copy">
+                        <span>English Lesson</span>
+                        <h4>Sample Video 01</h4>
+                    </div>
+                </article>
+
+                <article class="motion-video-card">
+                    <div class="video-frame">
+                        <iframe src="https://www.youtube.com/embed/TbxjsVdQUuc" title="English computer science lesson sample 2" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="motion-video-copy">
+                        <span>English Lesson</span>
+                        <h4>Sample Video 02</h4>
+                    </div>
+                </article>
+
+                <article class="motion-video-card">
+                    <div class="video-frame">
+                        <iframe src="https://www.youtube.com/embed/IYd8mZ-1qjM" title="English computer science lesson sample 3" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="motion-video-copy">
+                        <span>English Lesson</span>
+                        <h4>Sample Video 03</h4>
+                    </div>
+                </article>
+
+                <article class="motion-video-card">
+                    <div class="video-frame">
+                        <iframe src="https://www.youtube.com/embed/Ungg92TV1Iw" title="Dari computer science lesson sample" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="motion-video-copy">
+                        <span>Dari Lesson</span>
+                        <h4>Sample Video 04</h4>
                     </div>
                 </article>
             </div>
@@ -541,6 +708,11 @@
                     <h3>WhatsApp</h3>
                     <p><a href="https://wa.me/93777168296">+93 777 16 82 96</a></p>
                 </article>
+                <article class="contact-card">
+                    <i class='bx bxl-linkedin'></i>
+                    <h3>LinkedIn</h3>
+                    <p><a href="https://www.linkedin.com/in/tamim-amiri-52151533a/" target="_blank">Tamim Amiri</a></p>
+                </article>
 
                 <article class="contact-card">
                     <i class='bx bxl-youtube'></i>
@@ -562,6 +734,40 @@
             </div>
         </section>
     </main>
+
+    <div class="phone-dialog-overlay" id="phone-dialog" aria-hidden="true">
+        <div class="phone-dialog" role="dialog" aria-modal="true" aria-labelledby="phone-dialog-title">
+            <button class="phone-dialog-close" id="phone-dialog-close" aria-label="Close phone dialog">
+                <i class='bx bx-x'></i>
+            </button>
+            <div class="phone-dialog-icon">
+                <i class='bx bx-phone-call'></i>
+            </div>
+            <p class="phone-dialog-label">Direct Contact</p>
+            <h3 id="phone-dialog-title">Call Tamim Amiri</h3>
+            <p class="phone-dialog-number">+93 70 71 91 589</p>
+            <div class="phone-dialog-actions">
+                <button type="button" class="phone-dialog-secondary" id="phone-dialog-cancel">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="phone-dialog-overlay" id="address-dialog" aria-hidden="true">
+        <div class="phone-dialog" role="dialog" aria-modal="true" aria-labelledby="address-dialog-title">
+            <button class="phone-dialog-close" id="address-dialog-close" aria-label="Close address dialog">
+                <i class='bx bx-x'></i>
+            </button>
+            <div class="phone-dialog-icon">
+                <i class='bx bx-map'></i>
+            </div>
+            <p class="phone-dialog-label">Location Details</p>
+            <h3 id="address-dialog-title">Tamim Amiri Address</h3>
+            <p class="phone-dialog-number">Nawabat-e-Badambagh, Kabul, Afghanistan</p>
+            <div class="phone-dialog-actions">
+                <button type="button" class="phone-dialog-secondary" id="address-dialog-cancel">Close</button>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="footer-text">
