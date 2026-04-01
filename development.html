@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Tamim Amiri | Under Development</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .development-page {
+            min-height: 100vh;
+            background:
+                radial-gradient(circle at top left, rgba(168, 119, 69, 0.2), transparent 28%),
+                linear-gradient(180deg, rgba(255, 253, 249, 0.78), rgba(232, 221, 208, 0.92)),
+                var(--bg-color);
+        }
+
+        .development-page .header {
+            background: var(--bg-color);
+            box-shadow: 0 0.1rem 1rem var(--shadow-color);
+        }
+
+        .development-page .navbar a {
+            color: var(--text-color);
+        }
+
+        .development-page .navbar a:hover,
+        .development-page .navbar a.active {
+            color: var(--main-color);
+        }
+
+        .development-page #darkMode-icon {
+            color: var(--text-color);
+        }
+
+        .development-hero {
+            min-height: calc(100vh - 9rem);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 14rem;
+            padding-bottom: 6rem;
+        }
+
+        .development-card {
+            width: min(100%, 78rem);
+            text-align: center;
+            padding: 4.4rem 3rem;
+            border-radius: 3rem;
+            background: rgba(255, 253, 249, 0.9);
+            border: 0.1rem solid rgba(168, 119, 69, 0.14);
+            box-shadow: 0 2rem 5rem rgba(61, 42, 26, 0.12);
+        }
+
+        .development-icon {
+            width: 9rem;
+            height: 9rem;
+            margin: 0 auto 2rem;
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #a87745, #c89358);
+            color: var(--white-color);
+            font-size: 4.2rem;
+            box-shadow: 0 1rem 2.4rem rgba(168, 119, 69, 0.3);
+        }
+
+        .development-icon-badge {
+            position: absolute;
+            right: -0.4rem;
+            bottom: -0.2rem;
+            width: 3.2rem;
+            height: 3.2rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: var(--white-color);
+            color: var(--main-color);
+            font-size: 1.8rem;
+            box-shadow: 0 0.6rem 1.6rem rgba(61, 42, 26, 0.18);
+        }
+
+        .development-card .section-tag {
+            margin-bottom: 1.2rem;
+        }
+
+        .development-card h1 {
+            font-size: clamp(3.2rem, 6vw, 5.2rem);
+            margin-bottom: 1.6rem;
+        }
+
+        .development-card p {
+            max-width: 58rem;
+            margin: 0 auto;
+            font-size: 1.7rem;
+            line-height: 1.9;
+        }
+
+        .development-actions {
+            display: flex;
+            justify-content: center;
+            gap: 1.4rem;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+        }
+
+        .development-link {
+            padding: 1.2rem 2.8rem;
+            border-radius: 0.8rem;
+            border: 0.2rem solid rgba(168, 119, 69, 0.24);
+            color: var(--text-color);
+            font-size: 1.6rem;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .development-link:hover {
+            border-color: var(--main-color);
+            color: var(--main-color);
+            background: rgba(168, 119, 69, 0.08);
+        }
+
+        .development-note {
+            margin-top: 2.4rem;
+            font-size: 1.45rem;
+            color: rgba(47, 36, 29, 0.76);
+        }
+
+        .dark-mode.development-page .development-card {
+            background: rgba(48, 35, 27, 0.94);
+            border-color: rgba(255, 255, 255, 0.08);
+        }
+
+        .dark-mode.development-page .development-note {
+            color: rgba(245, 237, 227, 0.76);
+        }
+
+        .dark-mode.development-page .development-icon-badge {
+            background: #fff7ef;
+        }
+
+        .dark-mode.development-page .development-link {
+            color: var(--white-color);
+            border-color: rgba(255, 255, 255, 0.14);
+        }
+
+        @media (max-width: 768px) {
+            .development-page .navbar a {
+                color: var(--text-color);
+            }
+
+            .development-card {
+                padding: 3.6rem 2rem;
+            }
+        }
+    </style>
+</head>
+<body class="development-page">
+    <header class="header sticky">
+        <a href="index.html#home" class="logo"><img src="images/logo.png" alt="Tamim Amiri logo"></a>
+
+        <nav class="navbar">
+            <a href="index.html#home" class="active">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#services">Experience</a>
+            <a href="index.html#portfolio">Projects</a>
+            <a href="index.html#motion">Media</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <button id="darkMode-icon" class="icon-button" aria-label="Toggle theme">
+                <i class='bx bx-moon'></i>
+            </button>
+            <button id="menu-icon" class="icon-button menu-button" aria-label="Open menu">
+                <i class='bx bx-menu'></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="development-hero" id="development">
+            <article class="development-card">
+                <div class="development-icon">
+                    <i class='bx bx-code-alt'></i>
+                    <span class="development-icon-badge">
+                        <i class='bx bx-cog'></i>
+                    </span>
+                </div>
+                <p class="section-tag">Page Status</p>
+                <h1>This Page Is <span>Under Development</span></h1>
+                <p>
+                    This section is still being prepared. You can return to the main portfolio page
+                    and continue browsing any part of the website from the navigation links below.
+                </p>
+
+                <div class="development-actions">
+                    <a href="index.html" class="btn">Go To Index Page</a>
+                    <a href="index.html#portfolio" class="development-link">Back To Projects</a>
+                </div>
+
+                <p class="development-note">
+                    The navbar on this page also takes you directly to each section of `index.html`.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2026 by Tamim Amiri | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="index.html#home" aria-label="Back to home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
