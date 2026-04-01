@@ -139,14 +139,16 @@ document.addEventListener('keydown', event => {
 });
 
 /*========== scroll reveal ==========*/
-ScrollReveal({
-    reset: false,
-    distance: '80px',
-    duration: 2000,
-    delay: 200
-});
+if (typeof ScrollReveal !== 'undefined') {
+    ScrollReveal({
+        reset: false,
+        distance: '80px',
+        duration: 2000,
+        delay: 200
+    });
 
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .resume-grid, .contact-details, .motion-channel, .motion-video-card', { origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left' });
-ScrollReveal().reveal('.home-content h3, .home-content p, .about-content, .portfolio-intro', { origin: 'right' });
+    ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+    ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .resume-grid, .contact-details, .motion-channel, .motion-video-card', { origin: 'bottom' });
+    ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left' });
+    ScrollReveal().reveal('.home-content h3, .home-content p, .about-content, .portfolio-intro', { origin: 'right' });
+}
